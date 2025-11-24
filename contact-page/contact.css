@@ -42,6 +42,8 @@ main {
   color: #ede0d4;
   display: block;
   transition: 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
 }
 .header-nav #close-btn {
   margin: 20px 0;

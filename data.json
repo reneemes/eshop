@@ -26,7 +26,7 @@
       "attributes": {
         "name": "Sourdough Cinnamon Raisin Bagel",
         "price": 2.95,
-        "description": "Product description...",
+        "description": "Tangy sourdough blended with sweet raisins and warm cinnamon.",
         "img_url": "https://foodovercomfort.com/wp-content/uploads/2024/04/sourdough-cinnamon-raisin-bagels.jpg"
       }
     },
@@ -36,7 +36,7 @@
       "attributes": {
         "name": "Pizza Bagel",
         "price": 6.50,
-        "description": "Product description...",
+        "description": "A toasted bagel topped with zesty marinara, melted cheese, and classic pizza toppings.",
         "img_url": "https://cdn5.projectmealplan.com/wp-content/uploads/2022/06/air-fryer-pizza-bagel-bites-hero-top-scaled.jpg"
       }
     },
@@ -46,7 +46,7 @@
       "attributes": {
         "name": "Everything Bagel",
         "price": 2.50,
-        "description": "Product description...",
+        "description": "A savory blend of sesame, poppy, garlic, onion, and salt on a golden, chewy bagel.",
         "img_url": "https://www.thisjess.com/wp-content/uploads/2024/09/Homemade-everything-bagels-stack-1.jpg"
       }
     },
@@ -56,7 +56,7 @@
       "attributes": {
         "name": "Blueberry Bagel",
         "price": 2.50,
-        "description": "Product description...",
+        "description": "A soft, slightly sweet bagel bursting with real blueberries.",
         "img_url": "https://www.thisjess.com/wp-content/uploads/2023/05/Sourdough-discard-blueberry-bagels-final-1.jpg"
       }
     },
@@ -66,7 +66,7 @@
       "attributes": {
         "name": "Chocolate Chip Bagel",
         "price": 2.50,
-        "description": "Product description...",
+        "description": "A lightly sweet bagel dotted with melty chocolate chips.",
         "img_url": "https://homebodyeats.com/wp-content/uploads/2024/06/chocolate-chip-bagels.jpg"
       }
     },
@@ -76,7 +76,7 @@
       "attributes": {
         "name": "Bagel Breakfast Sandwich",
         "price": 7.00,
-        "description": "Product description...",
+        "description": "A fresh bagel stacked with eggs, cheese, and your choice of breakfast protein.",
         "img_url": "https://cheeseknees.com/wp-content/uploads/2022/11/Bagel-Breakfast-Sandwiches-01.jpg"
       }
     },
@@ -86,7 +86,7 @@
       "attributes": {
         "name": "Bagel and Lox",
         "price": 9.00,
-        "description": "Product description...",
+        "description": "A classic pairing of a toasted bagel, silky smoked salmon, cream cheese, and traditional toppings..",
         "img_url": "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/2025-04/Chewy-Everything-Bagels_Shot_4_027.jpg?itok=brHI0RTZ"
       }
     },
@@ -96,7 +96,7 @@
       "attributes": {
         "name": "Jalapeño Cheddar Bagel",
         "price": 2.50,
-        "description": "Product description...",
+        "description": "A bold bagel baked with spicy jalapeños and melted cheddar.",
         "img_url": "https://www.shortstackkitchen.com/wp-content/uploads/2024/10/jalapeno-cheddar-bagels-39.jpg"
       }
     },
@@ -106,7 +106,7 @@
       "attributes": {
         "name": "Seasonal Bagel",
         "price": 2.50,
-        "description": "Product description...",
+        "description": "A limited-time bagel featuring flavors inspired by the season.",
         "img_url": "https://www.girlversusdough.com/wp-content/uploads/2014/12/cranberry-walnut-bagels-1.jpg"
       }
     },
@@ -116,7 +116,7 @@
       "attributes": {
         "name": "Cream Cheese Spread",
         "price": 0.50,
-        "description": "Product description...",
+        "description": "Smooth, whipped cream cheese perfect for spreading on any bagel.",
         "img_url": "https://www.biggerbolderbaking.com/wp-content/uploads/2020/04/Homemade-Cream-Cheese-Flavors-WS-Thumbnail.jpg"
       }
     }

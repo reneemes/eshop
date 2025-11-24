@@ -83,6 +83,8 @@ main {
     color: $light-brown;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
   }
 
   #close-btn {
