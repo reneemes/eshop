@@ -11,15 +11,32 @@ $dark-brown: #432818;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+
   &:hover {
     background-color: $light-brown;
     color: $dark-brown;
   }
 }
 
+@mixin input-box {
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  width: 300px;
+
+  &:focus {
+    outline-color: $secondary-color;
+  }
+}
+
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  margin: 10px 0 0;
 }
 
 .header {
@@ -41,19 +58,58 @@ body {
   }
 }
 
+.contact-sec {
+  background-color: $light-brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  &__title {
+    color: $dark-brown;
+    font-size: 2rem;
+  }
+}
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__label {
+    color: $dark-brown;
+    font-size: 1.25rem;
+
+    &--required:after {
+      content: " *";
+      color: firebrick;
+    }
+  }
+  
+  &__submit-btn {
+    @include btn;
+    border: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  input,
+  textarea {
+    @include input-box;
+    margin: 0 0 15px 0;
+  }
+
+}
 
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
   background-color: $light-brown;
   height: 50px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 
   p {
     margin: 0;
