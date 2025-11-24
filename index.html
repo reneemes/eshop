@@ -8,32 +8,44 @@
   <title>Bagel Bites</title>
 </head>
 <body>
-  <!-- <header class="header">
-    <h1 class="header__title">Bagel Bites</h1>
-    <img class="header__logo" src="assets/bagel-bites-logo.png">
-    <div>
-      <a class="header__product-btn" href="product-page/products.html">Shop Bagels</a>
-      <a class="header__contact-btn" href="contact-page/contact.html">Contact Us</a>
-    </div>
-  </header> -->
   <header class="header">
     <h1 class="header__title">Bagel Bites</h1>
-    <i class="fa-solid fa-bars fa-2xl" style="color: #432818;" onclick="openNav()"></i>
-    <div class="header-nav" id="header-nav">
-      <i class="fa-solid fa-xmark fa-2xl" style="color: #432818;" onclick="closeNav()" id="close-btn"></i>
+    <nav class="nav nav--desktop" id="desktop-nav">
+      <a class="header__product-btn" href="product-page/products.html">Shop Bagels</a>
+      <a class="header__contact-btn" href="contact-page/contact.html">Contact Us</a>
+    </nav>
+
+    <i class="fa-solid fa-bars fa-2xl" style="color: #432818;" onclick="openNav()" id="hamburger-icon"></i>
+    <nav class="header-nav nav nav--mobile" id="mobile-nav">
+      <i class="fa-solid fa-xmark fa-2xl" style="color: #ede0d4;" onclick="closeNav()" id="close-btn"></i>
       <a class="header-nav__product-btn" href="../product-page/products.html">Shop Bagels</a>
       <a class="header-nav__contact-btn" href="contact-page/contact.html">Contact Us</a>
-    </div>
+    </nav>
   </header>
 
   <main class="main-body">
     <section class="main-body__hero">
       <img class="main-body__hero--img" src="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/2025-04/Chewy-Everything-Bagels_Shot_4_027.jpg?itok=brHI0RTZ" alt="Bagels">
-      <div class="main-body__hero--txt">Bagel Bites</div>
+      <div class="main-body__hero--txt">
+        <p>Bagel Bites</p>
+      </div>
     </section>
-    <section class="main-body__product-grid"></section>
+    <section class="main-description">
+      <p class="main-description__greeting">Welcome to Bagel Bites, where every bagel is freshly baked and bursting with flavor!</p>
+      <p class="main-description__about">
+        From classic favorites like Everything and Blueberry to bold creations like
+        Jalapeño Cheddar and Pizza Bagels, we’ve got something to satisfy every craving.
+        Pair them with our creamy spreads, fresh toppings, or a breakfast sandwich for the perfect 
+        start to your day. Whether you’re a bagel connoisseur or just here for a tasty treat, 
+        you’ll find our bagels are soft, chewy, and impossible to resist. Dive in, explore our flavors, 
+        and let your taste buds celebrate!
+      </p>
+    </section>
+    <section class="main-links">
+      <a class="main-links__btn">Shop Bagels</a>
+      <a class="main-links__btn">Contact Us</a>
+    </section>
   </main>
-
   <footer class="footer">
     <p class="footer__trademark">Copyright © 2025 Bagel Bites. All rights reserved.</p>
     <p class="footer__disclosure">

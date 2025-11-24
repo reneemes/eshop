@@ -79,6 +79,7 @@ main {
 .contact-form__submit-btn {
   text-decoration: none;
   background-color: #7f5539;
+  border: 2px solid #7f5539;
   color: #ede0d4;
   font-size: 1.25rem;
   padding: 10px;
