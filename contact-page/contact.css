@@ -2,6 +2,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -18,11 +20,14 @@ main {
   padding: 10px;
 }
 .header__title {
-  margin: 0;
   color: #432818;
+  margin: 0;
 }
 
-.header-nav {
+.nav--desktop {
+  display: none;
+}
+.nav--mobile {
   height: 100%;
   width: 0;
   position: fixed;
@@ -34,6 +39,7 @@ main {
   padding-top: 30px;
   transition: 0.5s;
 }
+
 .header-nav__home-btn, .header-nav__product-btn,
 .header-nav #close-btn {
   padding: 8px 8px 8px 32px;
@@ -132,6 +138,29 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  #hamburger-icon {
+    display: none;
+  }
+  .nav--desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__product-btn, .header__home-btn {
+    text-decoration: none;
+    background-color: #7f5539;
+    border: 2px solid #7f5539;
+    color: #ede0d4;
+    font-size: 1.25rem;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  .header__product-btn:hover, .header__home-btn:hover {
+    background-color: #ede0d4;
+    color: #432818;
+  }
   main {
     margin: 30px;
   }

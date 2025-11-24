@@ -63,35 +63,35 @@ main {
   // }
 }
 
-.header-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: $secondary-color;
-  overflow-x: hidden;
-  padding-top: 30px;
-  transition: 0.5s;
+// .header-nav {
+//   height: 100%;
+//   width: 0;
+//   position: fixed;
+//   z-index: 1;
+//   top: 0;
+//   right: 0;
+//   background-color: $secondary-color;
+//   overflow-x: hidden;
+//   padding-top: 30px;
+//   transition: 0.5s;
 
-  &__home-btn,
-  &__contact-btn,
-  #close-btn {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.75rem;
-    color: $light-brown;
-    display: block;
-    transition: 0.3s;
-    white-space: nowrap;
-    cursor: pointer;
-  }
+//   &__home-btn,
+//   &__contact-btn,
+//   #close-btn {
+//     padding: 8px 8px 8px 32px;
+//     text-decoration: none;
+//     font-size: 1.75rem;
+//     color: $light-brown;
+//     display: block;
+//     transition: 0.3s;
+//     white-space: nowrap;
+//     cursor: pointer;
+//   }
 
-  #close-btn {
-    margin: 20px 0;
-  }
-}
+//   #close-btn {
+//     margin: 20px 0;
+//   }
+// }
 
 .product-sec {
   display: flex;

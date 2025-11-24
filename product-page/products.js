@@ -22,9 +22,9 @@ function displayData(data) {
 }
 
 function openNav() {
-  document.getElementById('header-nav').style.width = '250px';
+  document.getElementById('mobile-nav').style.width = '250px';
 }
 
 function closeNav() {
-  document.getElementById('header-nav').style.width = '0';
+  document.getElementById('mobile-nav').style.width = '0';
 }
