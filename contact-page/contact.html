@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/fdf00391bb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="contact.css">
   <title>Contact Us</title>
 </head>
 <body>
   <header class="header">
     <h1 class="header__title">Bagel Bites</h1>
-    <div>
-      <a class="header__home-btn" href="../index.html">Home</a>
-      <a class="header__product-btn" href="contact-page/contact.html">Shop Bagels</a>
+    <i class="fa-solid fa-bars fa-2xl" style="color: #432818;" onclick="openNav()"></i>
+    <div class="header-nav" id="header-nav">
+      <i class="fa-solid fa-xmark fa-2xl" style="color: #432818;" onclick="closeNav()" id="close-btn"></i>
+      <a class="header-nav__home-btn" href="../index.html">Home</a>
+      <a class="header-nav__product-btn" href="../product-page/products.html">Shop Bagels</a>
     </div>
   </header>
   <main>
@@ -32,14 +35,21 @@
           required>
 
         <label class="contact-form__label contact-form__label--required">Comments</label>
-        <textarea name="comments"></textarea>
+        <textarea name="comments" maxlength="500" placeholder="Enter your comment here (max 500 characters)" id="comment-box"></textarea>
+        <p id="character-output"></p>
 
         <button class="submit-btn contact-form__submit-btn" type="submit" id="submit-btn">Submit</button>
       </form>
     </section>
   </main>
   <footer class="footer">
-    <p>Copyright</p>
+    <p class="footer__trademark">Copyright © 2025 Bagel Bites. All rights reserved.</p>
+    <p class="footer__disclosure">
+      Bagel Bites is a student project for educational purposes and is not a
+      real store.
+    </p>
   </footer>
+
+  <script src="contact.js"></script>
 </body>
 </html>

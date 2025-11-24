@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -55,9 +56,37 @@ main {
   //   height: 100px;
   // }
 
+  // &__home-btn,
+  // &__contact-btn {
+  //   @include btn;
+  // }
+}
+
+.header-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $secondary-color;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
+
   &__home-btn,
-  &__contact-btn {
-    @include btn;
+  &__contact-btn,
+  #close-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: $light-brown;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #close-btn {
+    margin: 20px 0;
   }
 }
 
@@ -91,14 +120,17 @@ main {
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $light-brown;
-  height: 50px;
+  // height: 65px;
   width: 100%;
 
-  p {
-    margin: 0;
+  &__trademark,
+  &__disclosure {
+    text-align: center;
+    margin: 3px;
     color: $dark-brown;
   }
 }

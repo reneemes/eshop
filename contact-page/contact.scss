@@ -32,11 +32,12 @@ $dark-brown: #432818;
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
   flex-grow: 1;
-  margin: 10px 0 0;
+  margin: 10px 0;
 }
 
 .header {
@@ -52,9 +53,37 @@ main {
     color: $dark-brown;
   }
 
+  // &__home-btn,
+  // &__product-btn {
+  //   @include btn;
+  // }
+}
+
+.header-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $secondary-color;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
+
   &__home-btn,
-  &__product-btn {
-    @include btn;
+  &__product-btn,
+  #close-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: $light-brown;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #close-btn {
+    margin: 20px 0;
   }
 }
 
@@ -63,6 +92,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 375px;
+  border-radius: 10px;
+  margin: 0 auto;
 
   &__title {
     color: $dark-brown;
@@ -90,6 +122,10 @@ main {
     border: none;
     width: 100%;
     margin: 20px 0;
+
+    &:hover {
+      border: 1px solid $dark-brown
+    }
   }
 
   input,
@@ -98,21 +134,55 @@ main {
     margin: 0 0 15px 0;
   }
 
-}
+  textarea {
+    height: 100px;
+    margin: 0;
+  }
 
+  #character-output {
+    font-size: 0.9rem;
+    margin: 3px;
+  }
+}
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $light-brown;
-  height: 50px;
+  // height: 50px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // bottom: 0;
 
-  p {
-    margin: 0;
+  &__trademark,
+  &__disclosure  {
+    text-align: center;
+    margin: 3px;
     color: $dark-brown;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin: 30px;
+  }
+
+  .contact-sec {
+    max-width: 500px;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    height: 80vh;
+  }
+
+  .contact-sec {
+    max-width: 600px;
+    // min-height: 700px;
+    // padding: 20px 0;
   }
 }

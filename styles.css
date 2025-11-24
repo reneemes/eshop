@@ -1,6 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .header {
@@ -18,31 +19,30 @@ body {
 .header__logo {
   height: 100px;
 }
-.header__product-btn {
-  text-decoration: none;
+
+.header-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
   background-color: #7f5539;
-  color: #ede0d4;
-  font-size: 1.25rem;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
 }
-.header__product-btn:hover {
-  background-color: #ede0d4;
-  color: #432818;
-}
-.header__contact-btn {
+.header-nav__contact-btn, .header-nav__product-btn,
+.header-nav #close-btn {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  background-color: #7f5539;
+  font-size: 1.75rem;
   color: #ede0d4;
-  font-size: 1.25rem;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
+  display: block;
+  transition: 0.3s;
 }
-.header__contact-btn:hover {
-  background-color: #ede0d4;
-  color: #432818;
+.header-nav #close-btn {
+  margin: 20px 0;
 }
 
 .main-body__hero--img {
@@ -59,15 +59,16 @@ body {
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
   bottom: 0;
   background-color: #ede0d4;
-  height: 50px;
   width: 100%;
 }
-.footer p {
-  margin: 0;
+.footer__trademark, .footer__disclosure {
+  text-align: center;
+  margin: 3px;
   color: #432818;
 }/*# sourceMappingURL=styles.css.map */

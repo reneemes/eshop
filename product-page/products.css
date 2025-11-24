@@ -3,6 +3,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
 }
 
 main {
@@ -29,18 +30,30 @@ main {
   color: #ede0d4;
   cursor: pointer;
 }
-.header__home-btn, .header__contact-btn {
-  text-decoration: none;
+
+.header-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
   background-color: #7f5539;
-  color: #ede0d4;
-  font-size: 1.25rem;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
 }
-.header__home-btn:hover, .header__contact-btn:hover {
-  background-color: #ede0d4;
-  color: #432818;
+.header-nav__home-btn, .header-nav__contact-btn,
+.header-nav #close-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: #ede0d4;
+  display: block;
+  transition: 0.3s;
+}
+.header-nav #close-btn {
+  margin: 20px 0;
 }
 
 .product-sec {
@@ -70,13 +83,14 @@ main {
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #ede0d4;
-  height: 50px;
   width: 100%;
 }
-.footer p {
-  margin: 0;
+.footer__trademark, .footer__disclosure {
+  text-align: center;
+  margin: 3px;
   color: #432818;
 }/*# sourceMappingURL=products.css.map */

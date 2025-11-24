@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/fdf00391bb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <title>Bagel Bites</title>
 </head>
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <h1 class="header__title">Bagel Bites</h1>
     <img class="header__logo" src="assets/bagel-bites-logo.png">
     <div>
       <a class="header__product-btn" href="product-page/products.html">Shop Bagels</a>
       <a class="header__contact-btn" href="contact-page/contact.html">Contact Us</a>
+    </div>
+  </header> -->
+  <header class="header">
+    <h1 class="header__title">Bagel Bites</h1>
+    <i class="fa-solid fa-bars fa-2xl" style="color: #432818;" onclick="openNav()"></i>
+    <div class="header-nav" id="header-nav">
+      <i class="fa-solid fa-xmark fa-2xl" style="color: #432818;" onclick="closeNav()" id="close-btn"></i>
+      <a class="header-nav__product-btn" href="../product-page/products.html">Shop Bagels</a>
+      <a class="header-nav__contact-btn" href="contact-page/contact.html">Contact Us</a>
     </div>
   </header>
 
@@ -25,7 +35,13 @@
   </main>
 
   <footer class="footer">
-    <p>Copyright</p>
+    <p class="footer__trademark">Copyright © 2025 Bagel Bites. All rights reserved.</p>
+    <p class="footer__disclosure">
+      Bagel Bites is a student project for educational purposes and is not a
+      real store.
+    </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

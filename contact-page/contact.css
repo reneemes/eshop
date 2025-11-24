@@ -1,11 +1,12 @@
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: "Courier New", Courier, monospace;
 }
 
 main {
   flex-grow: 1;
-  margin: 10px 0 0;
+  margin: 10px 0;
 }
 
 .header {
@@ -20,18 +21,30 @@ main {
   margin: 0;
   color: #432818;
 }
-.header__home-btn, .header__product-btn {
-  text-decoration: none;
+
+.header-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
   background-color: #7f5539;
-  color: #ede0d4;
-  font-size: 1.25rem;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
 }
-.header__home-btn:hover, .header__product-btn:hover {
-  background-color: #ede0d4;
-  color: #432818;
+.header-nav__home-btn, .header-nav__product-btn,
+.header-nav #close-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: #ede0d4;
+  display: block;
+  transition: 0.3s;
+}
+.header-nav #close-btn {
+  margin: 20px 0;
 }
 
 .contact-sec {
@@ -39,6 +52,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 375px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 .contact-sec__title {
   color: #432818;
@@ -74,6 +90,9 @@ main {
   background-color: #ede0d4;
   color: #432818;
 }
+.contact-form__submit-btn:hover {
+  border: 1px solid #432818;
+}
 .contact-form input,
 .contact-form textarea {
   border: none;
@@ -86,18 +105,43 @@ main {
 .contact-form textarea:focus {
   outline-color: #7f5539;
 }
+.contact-form textarea {
+  height: 100px;
+  margin: 0;
+}
+.contact-form #character-output {
+  font-size: 0.9rem;
+  margin: 3px;
+}
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #ede0d4;
-  height: 50px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
-.footer p {
-  margin: 0;
+.footer__trademark, .footer__disclosure {
+  text-align: center;
+  margin: 3px;
   color: #432818;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin: 30px;
+  }
+  .contact-sec {
+    max-width: 500px;
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    height: 80vh;
+  }
+  .contact-sec {
+    max-width: 600px;
+  }
 }/*# sourceMappingURL=contact.css.map */
