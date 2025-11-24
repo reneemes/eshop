@@ -39,6 +39,8 @@ main {
   align-items: center;
   height: 60px;
   padding: 10px;
+  position: sticky;
+  top: 0;
 
   &__title {
     color: $dark-brown;
