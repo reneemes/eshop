@@ -127,6 +127,10 @@ main {
   font-size: 0.9rem;
   margin: 3px;
 }
+.contact-form .error-message {
+  margin: 10px 0 0;
+  color: firebrick;
+}
 
 .footer {
   display: flex;
