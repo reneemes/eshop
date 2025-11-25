@@ -138,6 +138,14 @@ main {
     margin: 3px;
     color: $dark-brown;
   }
+
+  &__socials {
+    margin: 10px 0;
+  }
+
+  &__disclosure {
+    margin-bottom: 20px;
+  }
 }
 
 // Media Queries

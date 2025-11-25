@@ -136,6 +136,12 @@ main {
   margin: 3px;
   color: #432818;
 }
+.footer__socials {
+  margin: 10px 0;
+}
+.footer__disclosure {
+  margin-bottom: 20px;
+}
 
 @media screen and (min-width: 768px) {
   #hamburger-icon {
